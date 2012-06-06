@@ -1,0 +1,24 @@
+Name:
+
+<h1 id="test" > <%= @friend.name %>  </h1> 
+<%= best_in_place @friend, :name, :type => :input %>
+
+<a href="#" id="haha" title="Change group name">Change group name<span class="icon"></span><span class="icon"></span></a>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	
+   $(".best_in_place").best_in_place();
+	
+	// If you need to remove an already bound editor you can call
+
+	// > $(selectorForEditors).unbind('.editInPlace')
+
+	// Which will remove all events that this editor has bound. You need to make sure however that the editor is 'closed' when you call this.
+	
+});
+
+
+
+</script>
+
